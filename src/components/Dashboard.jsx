@@ -91,15 +91,15 @@ const Dashboard = () => {
             Unique no. of times the link has been clicked:
           </div>
           <div className="font-bold p-2 border text-center">{visitCount}</div>
-          <div className="border p-2">New accounts with your referral:</div>
+          <div className="border p-2">New accounts with your referral</div>
           <div className="font-bold p-2 text-center border">{leng}</div>
-          <div className="border p-2">Total no. of referral page clicks:</div>
+          <div className="border p-2">Total no. of referral page clicks</div>
           <div className="font-bold p-2 text-center border">
             {normalPageCount}
           </div>
         </div>
 
-        <p className="text-xl font-semibold py-2">People referred: </p>
+        <p className="text-xl font-semibold py-2">People referred </p>
         {data.map((d, index) => (
           <li className="list-none" key={index}>
             {d}
