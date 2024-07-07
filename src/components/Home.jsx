@@ -5,8 +5,10 @@ import Faq from "./Faq";
 import Hero from "./Hero";
 import Button from "./Button";
 import Header from "./Header";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
+  const storage = localStorage.getItem("formData")
   return (
     <>
     <Header />
@@ -19,7 +21,8 @@ const Home = () => {
           <Table />
         </div>
       </div>
-      <div className="flex justify-center"><Button label="Refer Now"/></div>
+      {storage?<Link to="/dashboard"><div className="flex justify-center"><Button label="Refer Now"/></div></Link>:<Link to="/login"><div className="flex justify-center"><Button className="bg-green-400" label="Refer Now"/></div></Link>}
+      
       <Faq />
     </>
   );

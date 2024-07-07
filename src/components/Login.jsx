@@ -75,6 +75,7 @@ const Login = () => {
           Login
         </button>
         </Link>
+        <Link to="/register"><p className="text-sm text-blue-500">Register instead</p></Link>
       </div>
     </form>
   </div>

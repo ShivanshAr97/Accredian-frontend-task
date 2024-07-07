@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 const Register = () => {
@@ -14,7 +14,6 @@ const Register = () => {
 
   useEffect(() => {
     if (referredBy) {
-      // Decode URI component if needed
       const decodedReferrer = decodeURIComponent(referredBy).split("=")[1];
       setFormData({
         ...formData,
@@ -94,12 +93,14 @@ const Register = () => {
           />
         </div>
         <div>
+          
           <button
             type="submit"
             className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
           >
             Register
           </button>
+          <Link to="/login"><p className="text-sm text-blue-500">Login instead</p></Link>
         </div>
       </form>
     </div>

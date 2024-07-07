@@ -11,7 +11,6 @@ import New from "./components/New";
 
 function App() {
   const storage = localStorage.getItem("formData")
-  console.log(storage);
   return (
     <div className="mx-32">
       {storage&&<New/>}

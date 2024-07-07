@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Button = ({ label, onClick, style, disabled,className, ...props }) => {
-    const defaultClasses = "bg-green-500 px-4 py-1 font-medium text-lg rounded-md"
+    const defaultClasses = "bg-green-500 px-4 py-1 mt-6 font-medium text-lg rounded-md"
   return (
     <button
       onClick={onClick}

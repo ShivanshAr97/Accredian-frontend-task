@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../logo.png"
 import Button from "./Button";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="flex justify-between">
@@ -13,7 +15,7 @@ const Navbar = () => {
                 <li>Refer & Earn</li>
                 <li>Resourses</li>
                 <li>About Us</li>
-                <li>Login</li>
+                <Link to="/login"><button>Login</button></Link>
                 <Button className="bg-blue-600 text-base text-white" label="Try for free"/>
             </ul>
         </div>
